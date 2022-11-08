@@ -13,4 +13,6 @@ public class Point3D extends Point {
         this(x, y);
         this.z = z;
     }
+
+
 }

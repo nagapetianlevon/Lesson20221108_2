@@ -2,10 +2,13 @@ import itschool.Point;
 
 import java.io.PrintStream;
 import java.util.Locale;
+import java.util.Scanner;
 
 import static itschool.Point.count;
 
 public class Main {
+
+    public static Scanner in = new Scanner(System.in);
     public static void main(String[] args) {
         PrintStream out = new PrintStream(System.out);
 

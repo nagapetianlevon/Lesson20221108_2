@@ -1,8 +1,8 @@
 package itschool;
 
 public class Point {
-    private int x;
-    private int y;
+    private static int x;
+    private static int y;
     public static int count;
 
     public int getX() {
@@ -42,11 +42,11 @@ public class Point {
         this(x, 1);
 
     }
-    public double distance(int x2, int y2)
+    public static double distance(int x2, int y2)
     {
-        return Math.sqrt((x2-this.x)*(x2-this.x)+(y2-this.y)*(y2-this.y));
+        return Math.sqrt((x2-x)*(x2-x)+(y2-y)*(y2-y));
     }
-    public double distance(Point p)
+    public static double distance(Point p)
     {
         return Math.hypot(p.x - x, p.y - y);
     }
